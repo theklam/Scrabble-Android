@@ -1,0 +1,24 @@
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class ScrabbleDriver {
+
+	public static void main(String[] args) throws IOException {
+		Board game = new Board(1);
+		List<Letter> word = new ArrayList<Letter>();
+		word.add(new Letter('a', 1));
+		word.add(new Letter('b', 2));
+		//game.printWord(100000);
+		game.playWord(word, 1, 5, 1, 7);
+		game.printBoard();
+		System.out.println("--------");
+		List<Letter> word2 = new ArrayList<Letter>();
+		word2.add(new Letter('b', 1));
+		word2.add(new Letter('e', 2));
+		word2.add(new Letter('e', 2));
+		game.playWord(word2, 10, 6, 13, 6);
+		game.printBoard();
+	}
+
+}

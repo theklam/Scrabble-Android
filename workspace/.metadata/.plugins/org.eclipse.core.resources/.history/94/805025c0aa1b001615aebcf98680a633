@@ -1,0 +1,19 @@
+public class TestInherit extends Test {
+
+	public void printThis() {
+		System.out.println("hi");
+	}
+
+	public static void main(String[] args) {
+
+		TestInherit t2 = new TestInherit();
+
+		t2.printThis();
+
+		Test t1 = new TestInherit();
+
+//		t1.printThis();
+
+	}
+
+}

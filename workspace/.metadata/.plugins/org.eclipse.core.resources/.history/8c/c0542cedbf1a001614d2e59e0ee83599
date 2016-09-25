@@ -1,0 +1,51 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Player {
+
+	private List<Letter> letters;
+	private int points;
+	private String name;
+
+	public Player(String n) {
+		letters = new ArrayList<Letter>();
+		name = n;
+		points = 0;
+	}
+
+	public void grabLetter(Letter a){
+		letters.add(a);
+	}
+	
+	public Letter removeLetter (int index){
+		return letters.remove(index);
+	}
+	
+	public int getLetters(){
+		return letters.size();
+	}
+	
+	public int getPoints(){
+		return points;
+	}
+	
+	public String getName(){
+		return name;
+	}
+	
+	public void setName(String n){
+		name = n;
+	}
+	
+	public void setLetters(List<Letter> x){
+		letters = x;
+	}
+	
+	public void setPoints(int p){
+		points = p;
+	}
+	
+	public void addPoints(int n){
+		points += n;
+	}
+}

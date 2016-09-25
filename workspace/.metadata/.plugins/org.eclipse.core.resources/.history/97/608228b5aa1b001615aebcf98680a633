@@ -1,0 +1,9 @@
+
+public class TestInherit extends Test {
+
+	
+	public void printThis() {
+		System.out.println("hi");
+	}
+	
+}
